@@ -6,7 +6,6 @@ let num2 = document.getElementById('num2');
 let num3 = document.getElementById('num3');
 let buyTokenBtn = document.getElementById("buyToken");
 let msg = document.getElementById("text");
-
 let token = 50;
 let cash = 1000;
 

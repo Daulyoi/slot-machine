@@ -4,7 +4,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 18px; /* Increased font size */
+    font-size: 18px;
 }
 
 header {
@@ -14,7 +14,7 @@ header {
     padding: 20px;
     background-color: #1f1f1f;
     border-bottom: 2px solid #4CAF50;
-    font-size: 24px; /* Increased font size */
+    font-size: 24px;
 }
 
 main {
@@ -23,7 +23,7 @@ main {
     justify-content: center;
     flex-direction: column;
     padding: 20px;
-    font-size: 20px; /* Increased font size */
+    font-size: 20px;
 }
 
 .roll {
@@ -40,7 +40,7 @@ main {
     border-radius: 40px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-size: 22px; /* Increased font size */
+    font-size: 22px;
 }
 
 .square {
@@ -51,14 +51,14 @@ main {
     height: 200px;
     background-color: #dcdcdc;
     margin: 0 10px;
-    font-size: 180px; /* Increased font size */
+    font-size: 180px;
     font-weight: bolder;
     border-radius: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .stats {
-    font-size: 1.2rem; /* Increased font size */
+    font-size: 1.2rem;
     width: 100%;
     text-align: center;
     margin-top: 10px;
@@ -73,7 +73,7 @@ main {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px; /* Increased font size */
+    font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 12px;
