@@ -1,0 +1,109 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px; /* Increased font size */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-bottom: 2px solid #4CAF50;
+    font-size: 24px; /* Increased font size */
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 20px; /* Increased font size */
+}
+
+.roll {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #000000;
+    background-color: #ffffff;
+    margin-top: 50px;
+    width: 80%;
+    max-width: 750px;
+    height: 250px;
+    border: 2px solid #ffffff;
+    border-radius: 40px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 22px; /* Increased font size */
+}
+
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: #dcdcdc;
+    margin: 0 10px;
+    font-size: 180px; /* Increased font size */
+    font-weight: bolder;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stats {
+    font-size: 1.2rem; /* Increased font size */
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.stats #rollBtn {
+    width: 80px;
+    height: 40px;
+    background-color: #4CAF50;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* Increased font size */
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+
+.stats #rollBtn:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #4CAF50;
+}
+
+#buyToken {
+    width: 100px;
+    height: 40px;
+    background-color: #ff9800;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+
+#buyToken:hover {
+    background-color: #ffffff;
+    color: #ff9800;
+    border: 2px solid #ff9800;
+}
