@@ -40,8 +40,6 @@ rollBtn.addEventListener('click', function() {
         let rand2 = Math.floor(Math.random() * 10);
         let rand3 = Math.floor(Math.random() * 10);
         
-        console.log("roll results: ", rand1, rand2, rand3);
-    
         num1.innerHTML = rand1;
         num2.innerHTML = rand2;
         num3.innerHTML = rand3;
