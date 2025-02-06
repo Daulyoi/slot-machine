@@ -14,12 +14,13 @@ const startMoney = params.get("startMoney");
 
 if (startMoney) {
     cash = parseInt(startMoney);
+    if (cash < 100) {
+        msg.innerHTML = "You don't have enough money to play! Come back when you have more!";
+    } else
     if (cash > 10000) {
-        msg.innerHTML = "You have WAYYY too much money!";
+        msg.innerHTML = "You have WAYYY too much money! Are you sure you should be gambling this much money?";
     }
 }
-
-
 
 tokDisplay.innerHTML = token;
 cashDisplay.innerHTML = cash;
@@ -63,8 +64,8 @@ rollBtn.addEventListener('click', function() {
             cash += 50;
             msg.innerHTML = "You won $50!";
         } else {
-            cash -= 10;
-            msg.innerHTML = "You lost $10!";
+            cash -= 20;
+            msg.innerHTML = "You lost $20!";
         }
     
         tokDisplay.innerHTML = token;
