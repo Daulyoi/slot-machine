@@ -13,7 +13,7 @@ This is a **basic slot machine** website built using **HTML, CSS, and JavaScript
 ## How to Play
 
 1. Download or clone the project files onto your local machine
-2. Open the `index.html` file in a browser.
+2. Open the `startMenu.html` file in a browser.
 3. Click the "Spin" button to start the slot machine.
 4. Watch the slot reels spin and reveal a random outcome.
 5. If the symbols match, you win!
