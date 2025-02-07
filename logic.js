@@ -22,11 +22,23 @@ if (startMoney) {
     }
 }
 
+if (cash < 100 && token === 0) {
+    msg.innerHTML = "You're broke! Come back when you have more!";
+    rollBtn.disabled = true;
+    buyTokenBtn.disabled = false;
+
+}
+
 tokDisplay.innerHTML = token;
 cashDisplay.innerHTML = cash;
 
 buyTokenBtn.addEventListener('click', function(){
-    if (cash < 100) {
+    if (cash < 100 && token === 0) {
+        msg.innerHTML = "You're broke! Come back when you have more!";
+        rollBtn.disabled = true;
+        buyTokenBtn.disabled = false;
+        return;
+    } else if (cash < 100) {
         alert("You don't have enough money to buy a token!");
         return;
     }
@@ -39,8 +51,14 @@ buyTokenBtn.addEventListener('click', function(){
 
 rollBtn.addEventListener('click', function() {
     rollBtn.disabled = true;
-    if (token <= 0) {
+    if (cash < 100 && token === 0) {
+        msg.innerHTML = "You're broke! Come back when you have more!";
+        rollBtn.disabled = true;
+        buyTokenBtn.disabled = false;
+        return;
+    } else if (token <= 0) {
         alert("You don't have enough tokens to play!");
+        rollBtn.disabled = false;
         return;
     }
     token -= 1;
