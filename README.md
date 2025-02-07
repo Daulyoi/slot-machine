@@ -20,7 +20,7 @@ This is a **basic slot machine** website built using **HTML, CSS, and JavaScript
 
 ## Installation
 
-No installation required for local use! Simply open the `index.html` file in any modern web browser and enjoy the game. For online hosting, additional setup may be needed.
+No installation required for local use! Simply open the `startMenu.html` file in any modern web browser and enjoy the game. For online hosting, additional setup may be needed.
 
 ## Technologies Used
 
