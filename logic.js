@@ -14,18 +14,31 @@ const startMoney = params.get("startMoney");
 
 if (startMoney) {
     cash = parseInt(startMoney);
+    if (cash < 100) {
+        msg.innerHTML = "You don't have enough money to play! Come back when you have more!";
+    } else
     if (cash > 10000) {
-        msg.innerHTML = "You have WAYYY too much money!";
+        msg.innerHTML = "You have WAYYY too much money! Are you sure you should be gambling this much money?";
     }
 }
 
+if (cash < 100 && token === 0) {
+    msg.innerHTML = "You're broke! Come back when you have more!";
+    rollBtn.disabled = true;
+    buyTokenBtn.disabled = false;
 
+}
 
 tokDisplay.innerHTML = token;
 cashDisplay.innerHTML = cash;
 
 buyTokenBtn.addEventListener('click', function(){
-    if (cash < 100) {
+    if (cash < 100 && token === 0) {
+        msg.innerHTML = "You're broke! Come back when you have more!";
+        rollBtn.disabled = true;
+        buyTokenBtn.disabled = false;
+        return;
+    } else if (cash < 100) {
         alert("You don't have enough money to buy a token!");
         return;
     }
@@ -38,8 +51,14 @@ buyTokenBtn.addEventListener('click', function(){
 
 rollBtn.addEventListener('click', function() {
     rollBtn.disabled = true;
-    if (token <= 0) {
+    if (cash < 100 && token === 0) {
+        msg.innerHTML = "You're broke! Come back when you have more!";
+        rollBtn.disabled = true;
+        buyTokenBtn.disabled = false;
+        return;
+    } else if (token <= 0) {
         alert("You don't have enough tokens to play!");
+        rollBtn.disabled = false;
         return;
     }
     token -= 1;
@@ -63,8 +82,8 @@ rollBtn.addEventListener('click', function() {
             cash += 50;
             msg.innerHTML = "You won $50!";
         } else {
-            cash -= 10;
-            msg.innerHTML = "You lost $10!";
+            cash -= 20;
+            msg.innerHTML = "You lost $20!";
         }
     
         tokDisplay.innerHTML = token;
