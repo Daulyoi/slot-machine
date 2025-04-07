@@ -10,34 +10,13 @@
     <header>
         <h1>Slot Machine</h1>
     </header>
-
     <main>
-        <div class="roll">
-            <div class="square">
-                <p id="num1">-</p>
-            </div>
-            <div class="square">
-                <p id="num2">-</p>
-            </div>
-            <div class="square">
-                <p id="num3">-</p>
-            </div>
-        </div>            
-        
-        <div class="textbox">
-            <p id="text">-</p>
-        </div>
-
-        <div class="stats">
-            <p>Token: <span class="token" id="token">-</span></p>
-            <p>Cash: $ <span class="money" id="money">-</span></p>
-            <div class="buttons">
-                <button id="buyToken">Buy Token</button>
-                <button id="rollBtn">Roll</button>
-
-            </div>
-        </div>
+        <form action="play.html">
+            <label for="startMoney">How much money are you going to bring today?</label>
+            <input type="text" id="startMoney" name="startMoney" required placeholder="Enter amount here">
+            <button id="playBtn" type="submit">Start Playing</button>
+        </form>
     </main>
-    <script src="./logic.js"></script>
+
 </body>
 </html>
