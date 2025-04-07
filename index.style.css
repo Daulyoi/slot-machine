@@ -26,84 +26,37 @@ main {
     font-size: 20px;
 }
 
-.roll {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    color: #000000;
-    background-color: #ffffff;
-    margin-top: 50px;
-    width: 80%;
-    max-width: 750px;
-    height: 250px;
-    border: 2px solid #ffffff;
-    border-radius: 40px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-size: 22px;
-}
-
-.square {
+form {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 200px;
-    background-color: #dcdcdc;
-    margin: 0 10px;
-    font-size: 180px;
-    font-weight: bolder;
-    border-radius: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    padding: 20px;
+    font-size: 20px;
+    gap: 20px;
 }
 
-.stats {
-    font-size: 1.2rem;
+form input{
     width: 100%;
-    text-align: center;
-    margin-top: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-.stats #rollBtn {
-    width: 80px;
-    height: 40px;
+form button {
+    width: 100%;
     background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
     border: none;
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    border-radius: 4px;
     cursor: pointer;
-    border-radius: 12px;
-    transition-duration: 0.4s;
-}
-
-.stats #rollBtn:hover {
-    background-color: #ffffff;
-    color: #000000;
-    border: 2px solid #4CAF50;
-}
-
-#buyToken {
-    width: 100px;
-    height: 40px;
-    background-color: #ff9800;
-    border: none;
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 18px;
-    margin: 10px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-    transition-duration: 0.4s;
 }
 
-#buyToken:hover {
-    background-color: #ffffff;
-    color: #ff9800;
-    border: 2px solid #ff9800;
+form button:hover {
+    background-color: #45a049;
 }
