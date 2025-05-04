@@ -129,3 +129,7 @@ function rollAnim() {
         clearInterval(intervalId);
     }, duration);
 }
+
+goBackBtn.addEventListener('click', function() {
+    window.location.href = "/";
+});
