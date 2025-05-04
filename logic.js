@@ -1,6 +1,7 @@
 let tokDisplay = document.getElementById('token');
 let cashDisplay = document.getElementById('money');
 let rollBtn = document.getElementById('rollBtn');
+let goBackBtn = document.getElementById('goBack');
 let num1 = document.getElementById('num1');
 let num2 = document.getElementById('num2');
 let num3 = document.getElementById('num3');
@@ -82,6 +83,11 @@ rollBtn.addEventListener('click', function() {
             cash += 50;
             msg.innerHTML = "You won $50!";
         } else {
+            if(cash <20){
+                msg.innerHTML = "Youre broke! Come back when you have more!";
+                rollBtn.disabled = true;
+                return;
+            }
             cash -= 20;
             msg.innerHTML = "You lost $20!";
         }

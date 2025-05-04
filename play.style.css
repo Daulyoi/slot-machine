@@ -82,7 +82,7 @@ main {
 
 .stats #rollBtn:hover {
     background-color: #ffffff;
-    color: #000000;
+    color: #4CAF50;
     border: 2px solid #4CAF50;
 }
 
@@ -106,4 +106,35 @@ main {
     background-color: #ffffff;
     color: #ff9800;
     border: 2px solid #ff9800;
+}
+
+#goBack {
+    width: 100px;
+    height: 40px;
+    background-color: #006eff;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+
+#goBack:hover {
+    background-color: #ffffff;
+    color: #006eff;
+    border: 2px solid #006eff;
+}
+
+.stats a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.stats a:hover {
+    color: #006eff;
 }
